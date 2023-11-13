@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to flexbox</title>
+    <style>
+        .container {
+            padding: 20px;
+            margin: 10px;
+            height: 10vh;
+            border: 5px solid blue;
+            background-color: lightblue;
+            display: flex;
+            gap: 0.5rem;
+        }
+        .children {
+            height: auto;
+            background-color: peachpuff;
+            border: 5px solid lightsalmon;
+            flex: 1;
+            display: flex;
+        }
+        .grandson {
+            height: auto;
+            background-color: pink;
+            border: 5px solid red;
+            flex: 1;
+        }
+        .little-padding {
+            padding: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="children"></div>
+    <div class="children little-padding">
+        <div class="grandson"></div>
+        <div class="grandson"></div>
+    </div>
+    <div class="children"></div>
+</div>
+</body>
+</html>
