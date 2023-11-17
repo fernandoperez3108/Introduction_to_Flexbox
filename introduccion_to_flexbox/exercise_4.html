@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Flexbox - exercise 2</title>
+  <style>
+    .container {
+      padding: 20px;
+      margin: 0 0 10px;
+      height: 10vh;
+      border: 5px solid #00f;
+      background-color: lightblue;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .children {
+      height: auto;
+      background-color: peachpuff;
+      border: 5px solid lightsalmon;
+      flex: 1;
+      display: flex;
+    }
+
+    .little-padding {
+      padding: 0.3rem;
+    }
+
+    .grandson {
+      height: auto;
+      background-color: pink;
+      border: 5px solid red;
+      flex: 1;
+    }
+
+    .principal-container {
+      padding: 2rem;
+      border: 5px solid green;
+      background-color: lightgreen;
+    }
+
+    .container-main {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .main-section-left {
+      flex: 1;
+      height: 15rem;
+      background-color: pink;
+      border: 5px solid red;
+    }
+
+    .main-section-right {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .main-item {
+      flex: 1;
+      background-color: pink;
+      border: 5px solid red;
+    }
+
+    .container-footer {
+      padding: 20px;
+      margin: 10px 0 0;
+      height: 10vh;
+      border: 5px solid rgb(68, 0, 255);
+      background-color: rgb(196, 173, 230);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .footer-middle-container {
+      display: flex;
+      flex: 1;
+      gap: 0.5rem;
+    }
+
+    .footer-children {
+      height: auto;
+      background-color: rgb(254, 185, 255);
+      border: 5px solid rgb(255, 122, 246);
+      flex: 1;
+      display: flex;
+    }
+
+    .footer-grandson {
+      height: auto;
+      background-color: peachpuff;
+      border: 5px solid lightsalmon;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="principal-container">
+    <div class="container">
+      <div class="children"></div>
+      <div class="children little-padding">
+        <div class="grandson"></div>
+        <div class="grandson"></div>
+      </div>
+      <div class="children"></div>
+    </div>
+
+    <div class="container-main">
+      <div class="main-section-left"></div>
+      <div class="main-section-right">
+        <div class="main-item"></div>
+        <div class="main-item"></div>
+      </div>
+    </div>
+
+    <div class="container-footer">
+      <div class="footer-children"></div>
+      <div class="footer-middle-container">
+        <div class="footer-grandson"></div>
+        <div class="footer-grandson"></div>
+      </div>
+      <div class="footer-children"></div>
+    </div>
+  </div>
+</body>
+</html>
